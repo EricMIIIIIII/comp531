@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+</head>
+<body>
+	<h1>Pizza Guys Order Form</h1>
+	<img src="pizza.jpg" width="200" height="200">
+	<form><br>
+		<p><B>Name</B></p>
+		<input type="text" name="Name" placeholder="your name" pattern="^[A-Za-z\s]+$" required><br>
+		<p><B>Address: #### Street Name ...</B></p>
+		<input type="text" name="Address" placeholder="delivery address" pattern="\d\d\d\d\s[A-Za-z\s]*" required><br>
+		<p><B>Phone Number: 123-123-1234</B></p>
+		<input type="text" name="PhoneNum" placeholder="123-123-1234" pattern="\d\d\d-\d\d\d-\d\d\d\d" required><br>
+		<p><u><B>Pizza size</B></u></p>
+		<input type="radio" name="Size" value="Large" required>Large
+		<input type="radio" name="Size" value="Medium" required>Medium
+		<input type="radio" name="Size" value="Small" required>Small
+		<p><u>Pizza Toppings</u></p>
+		<input type="checkbox" name="Toppings" value="Sausage" >Sausage
+		<input type="checkbox" name="Toppings" value="Pepperoni" >Pepperoni
+		<input type="checkbox" name="Toppings" value="Olives" >Olives
+		<input type="checkbox" name="Toppings" value="Anchovies">Anchovies
+		<input type="checkbox" name="Toppings" value="Onions">Onions
+		<br>
+		<input type="submit", value="Place Order">
+		<input type="reset" value="Clear">
+
+
+	</form>	
+</body>
+</html>
