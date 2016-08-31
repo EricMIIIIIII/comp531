@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<title>Hello HTML!</title>
+
+<body onload="fiveSecAlert()">
+<h1>Jiwei Ye</h1>
+<img src="jiwei.jpeg" width="200" height="200">
+<p><B>My Last Trip</B></p>
+<p>During my last trip, I went to Lijiang, a beautiful city located in western China. We had a good time and did some exciting things like riding horses and drinking beer</p>
+
+<p><em>Check links below to know more about me</em></p>
+<a href="https://www.facebook.com/jiwei.ye.96?fref=ts">My Facebook Page</a><br>
+<a href="https://www.instagram.com/agoraphobiay/">My Instagram Page</a><br>
+<p> Comments and Questions</p>
+<textarea rows="10" cols="30" id="id_textarea"></textarea><br>
+<input type="submit" value="submit">
+<input type="button" id="id_clearbutton" value="clearTextArea" onclick="clearTextArea()"><br>
+<p><span id="sec_display" style="color:red;font-weight:bold">15</span></p> 
+<input type="button" id="id_pause" value="pause" onclick="pauseTimer()">
+<input type="button" id="id_resume" value="resume" onclick="resumeTimer()">
+
+</body>
+<script type="text/javascript">
+    var timer=setInterval(countDown,1000);
+    var present=15000;
+    function clearTextArea(){
+    	document.getElementById("id_textarea").value="";
+    }	
+    function fiveSecAlert(){
+    	setTimeout(function(){ alert("5 seconds passed and when timer is 0, the page will be redirected")},5000);
+    }
+    function countDown(){
+    	document.getElementById("sec_display").innerHTML=present/1000;
+    	present = present - 1000;
+    	if(present<=0){
+    		window.location.href="https://www.clear.rice.edu/comp431/sample/hello.html";
+    	}
+    }
+    function pauseTimer(){
+    	clearInterval(timer);
+    }
+    function resumeTimer(){
+    	timer=setInterval(countDown,1000);
+    }
+    
+
+
+</script>
+</html>
