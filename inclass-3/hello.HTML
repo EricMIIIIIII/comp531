@@ -30,7 +30,7 @@
     	setTimeout(function(){ alert("5 seconds passed and when timer is 0, the page will be redirected")},5000);
     }
     function countDown(){
-    	document.getElementById("sec_display").innerHTML=present/1000;
+    	document.getElementById("sec_display").innerHTML=(present/1000-1);
     	present = present - 1000;
     	if(present<=0){
     		window.location.href="https://www.clear.rice.edu/comp431/sample/hello.html";
