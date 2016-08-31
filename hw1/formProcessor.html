@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title> Registration Page</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Jiwei Ye">
+    <meta name="keywords" content="HTML, JavaScript">
+    <meta name="description" content="Registration Page">
+</head>
+
+<body onload="showinfo()">
+	<h1>Submitted Information</h1>
+    <table border="1">
+        <tr>
+        	<td>Key</td>
+        	<td>Value</td>
+        </tr>
+        <tr>
+        	<td>account name</td>
+        	<td id="val_account"></td>
+        </tr>
+        <tr>
+        	<td>display name</td>
+        	<td id="val_display"></td>
+        </tr>
+        <tr>
+        	<td>email address</td>
+        	<td id="val_email"></td>
+        </tr>
+        <tr>
+        	<td>phone number</td>
+        	<td id="val_phone"></td>
+        </tr> 
+        <tr>
+        	<td>date of birth</td>
+        	<td id="val_birth"></td>
+        </tr> 
+        <tr>
+        	<td>zipcode</td>
+        	<td id="val_zipcode"></td>
+        </tr> 
+        <tr>
+        	<td>password</td>
+        	<td id="val_psw"></td>
+        </tr> 
+        <tr>
+        	<td>password confirmation</td>
+        	<td id="val_pswconfirmation"></td>
+        </tr>
+        <tr>
+        	<td>timestamp</td>
+        	<td id="val_timestamp"></td> 
+        </tr>
+    </table>
+</body>
+
+<script type="text/javascript">
+    function showinfo(){
+        var query=location.search.substring(1);
+		var token=query.split("&");
+		for(var i=0; i<token.length; i++){
+			var pos=token[i].indexOf('=');
+			var value=token[i].substring(pos+1);
+			token[i]=value;
+        }
+        token[2]=token[2].replace(/%40/,"@");
+        var time=new Date(token[8]/1);
+		document.getElementById("val_account").innerHTML=token[0];
+		document.getElementById("val_display").innerHTML=token[1];
+		document.getElementById("val_email").innerHTML=token[2];
+		document.getElementById("val_phone").innerHTML=token[3];
+		document.getElementById("val_birth").innerHTML=token[4];
+		document.getElementById("val_zipcode").innerHTML=token[5];
+		document.getElementById("val_psw").innerHTML=token[6];
+		document.getElementById("val_pswconfirmation").innerHTML=token[7];
+		document.getElementById("val_timestamp").innerHTML=time;
+        
+	}
+
+		
+	
+</script> 
+
+</html>
+
