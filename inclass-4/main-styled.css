@@ -1,0 +1,40 @@
+/*style sheet for mian-styled.html*/
+body {
+	background-color: rgb(255,255,0);
+}
+
+#webname {
+	width: 100%;
+	text-align:center;
+	font-size: 4em;
+	font-family: "Times New Roman"; 
+}
+
+#username {
+	text-align: center;
+}
+
+#inputinfo {
+	width: 100%;
+	align: center;
+}
+
+#paragraph {
+	width: 100%;
+	text-align: center;
+	border: 0.5em solid red;
+	border-radius: 2em 2em 2em 2em;
+	padding: 3em 0em 3em 0em;
+	background-color:rgb(100,0,250);
+	font-size: 1.5em;
+}
+
+#post {
+	background-color:rgb(80,50,169);
+	font-size: 2em;
+	color: rgb(200,0,0);
+}
+
+#sharebox{
+	background-color:rgb(65,142,235);
+}
