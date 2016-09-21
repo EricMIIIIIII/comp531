@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <title> Profile Page</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jiwei Ye">
+    <meta name="keywords" content="HTML, JavaScript">
+    <meta name="description" content="Profile Page">
+    <script type="text/javascript" src="profile.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+        <center>
+        <h1 class = "pagetitle">Profile Page</h1>
+        </center>
+        <div class = "border" id = "profilefunction">
+            <center>
+            <button type="button" id="btn_tomain" class = "long_btn">Main Page</button><br><br>
+            <image src = "image/profile.jpg" id = "profileimage" class = "userimage"><br>
+            <input type = "file" value = "choose file"><br>
+            <button type = "button" class = "long_btn">Update Profile Image</button>
+            </center>
+            <center>
+            <h3>Current Info</h3>
+            <span id="textDisplayName">JiweiYe</span><br>
+            <span id="textEmailAddress">jy54@rice.edu</span><br>
+            <span id="textPhoneNumber">123-234-3456</span><br>
+            <span>Date of Birth: 06-30-1993</span><br>
+            <span id="textZipcode">77030</span><br>
+            </center>
+        </div> 
+
+        <div id = "profileUpdate">
+            <center>
+            <table>
+                <tr>
+                    <td>
+                        <span id = "textDisplayName">Display Name</span>
+                    </td>
+                    <td>
+                        <input type="text" id="id_displayName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id = "textEmailAddress">Email Address</span>
+                    </td>
+                    <td>
+                        <input type="text" id="id_emailAddress" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id = "textPhoneNumber">Phone Number</span>
+                    </td>
+                    <td>
+                        <input type="text" id="id_phoneNumber">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id = "textZipcode">Zip Code</span>
+                    </td>
+                    <td>
+                        <input type="text" id="id_zipcode">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Password</span>
+                    </td>
+                    <td>
+                        <input type="password" id="id_password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>PasswordConfirmation</span>
+                    </td>
+                    <td>
+                        <input type="password" id="id_passwordConfirmation">
+                    </td>
+                </tr>
+            </table>
+            <button type="button" id="id_submit">Update</button>
+            </center>
+        </div>
+</body>
+</html>
