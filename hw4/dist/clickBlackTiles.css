@@ -1,0 +1,26 @@
+#a {
+	border:3px solid rgb(80,50,169);
+	background-color: #5bc0de;
+}
+
+#description {
+	margin-top: 10%
+}
+
+#gamedata {
+	margin-top: 10%
+}
+
+#gamedata span {
+	font-weight: bold;
+}
+
+button {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+  width: 80px;
+  height: 22px;
+  font-size: 14px;
+  border-radius: 0.3em
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="author" content="Jiwei Ye">
+    <meta name="keywords" content="HTML, JavaScript">
+    <meta name="description" content="webgame">
+	<script src="clickBlackTiles.js"></script>
+	<link rel="stylesheet" href="clickBlackTiles.css">
+</head>
+<body>
+<div id = "gamedata">
+<span> Score: </span>
+<span id = "score">0</span><br>
+<span> Level: </span>
+<span id = "level">1</span><br>
+</div>
+<button type = "button" style = "display : none" id = "restart">Restart</button><br>
+<div id = "description">
+	<h2>Game Description</h2>
+	<span>(1) When the game start, click all the black</span><br>
+	<span>tiles but NO white tiles</span><br>
+	<span>(2) After 10 black tiles are clicked,</span><br> 
+	<span>the level of speed will increased</span><br>
+	<span>(3) The game will stop when</span><br>
+	<span> any white tile is clicked</span><br>
+	<span> or any black tile is missed, i.e a black tile</span><br>
+	<span> has rolled outside the border without being</span><br> 
+	<span> clicked</span><br>
+	<span>(4) Press Restart to play again</span>
+</div>
+<div style="position:fixed; top:50px; left:300px;" id = "gamewindow">
+	<canvas width="400" height="600" id="a"></canvas>
+</div>
+
+</body>
+
+</html>
