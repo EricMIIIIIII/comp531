@@ -1,0 +1,48 @@
+import React, { Component, PropTypes } from 'react'
+import { connect } from 'react-redux'
+import { updateHeadline } from '../profile/profileActions'
+import { navToMain, navToProfile } from '../../actions'
+import { logout } from '../auth/authActions'
+
+class Headline extends Component {
+
+    render() { return (
+        <div>
+            <img src={ this.props.avatar }/>
+            <p id="username" className = "username">{ this.props.username }</p>
+            <p id="headline" className = "headline">{ this.props.headline }</p>
+            <div>
+                <div>
+                    <p><input className="headfield" id="headline" type="text"
+                        placeholder="update your headline"
+                        ref={ (node) => { this.newHeadline = node }}
+                        onChange={() => this.forceUpdate()} /></p>
+                </div>
+                { 
+                    <div>
+                        <button className="udtbtn" type="button" value="Update your Headline"
+                            onClick={() => {
+                                this.props.dispatch(updateHeadline(this.newHeadline.value))
+                                this.newHeadline.value = ''
+                            }}>Update</button>
+                    </div>
+                }
+            </div>
+        </div>
+    )}
+}
+export default connect(
+    (state) => {
+        return {
+            username: state.profile.username,
+            headline: state.profile.headline,
+            avatar: state.profile.avatar
+        }
+    }
+)(Headline)
+
+
+
+/** WEBPACK FOOTER **
+ ** ./src/components/main/headline.js
+ **/
