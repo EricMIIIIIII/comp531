@@ -134,7 +134,7 @@ module.exports = app => {
 	app.put('/password', putPassword)
 	app.put('/logout', logout_default)
 
-	app.use(session({secret:'fjaksfjaldfuoiqrwe'}))
+	app.use(session({secret:'ccfdtdctfkdctd4e56si6drfnd56sftysd5dx'}))
 	app.use(passport.initialize())
 	app.use(passport.session())
 	app.use(cookieParser())
