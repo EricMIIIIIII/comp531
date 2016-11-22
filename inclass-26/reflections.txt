@@ -1,0 +1,23 @@
+what did you hope to learn but did not?
+	I think web security is quite interesting and want to know more 
+	about it, e.g how to defend our website from hacking.
+
+what did you really enjoy learning about?
+	Both those basic techniques like html, javascript, and css, and 
+	the currting-edge techniques like react and redux. Besides, personally
+	I think it is quite useful to have extra resource provided as tutorial
+	, like those link for react and redux.
+
+What worked well in the course? and how?
+	I do like the color of the lecture slides and those codes listed in the slides
+	can better explain the concepts.
+	
+What did not work well in the course and how might it be improved?
+	I think if we can get the slides earlier, we can have more time to read them 
+	in advance to keep pace with course.
+
+What could I have done to help you more, presentation of material, design of in class
+exercises, goals of projects – and be specific please!
+	I think it can help if more resources or links are provided in the slides after those
+	key concepts.
+
