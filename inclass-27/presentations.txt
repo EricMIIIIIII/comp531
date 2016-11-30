@@ -1,0 +1,8 @@
+1. Which presentation was the most polished and delivered, and why?
+Personally, I think browserify vs webpack is the most polished and delivered. This topic is introduced by stating a problem with SPAs using HTML5 first which make the origanization of presentation a good one. The reasons to choose webpack instead of browserify are listed and explained thoroughly. 
+
+2. Which topic did you learn the most from and what did you learn?
+I learn the most from the topipc of CSS framework. The advantages and disadvantages of those three css framework are stated clearly and easy to understand. Besides, each framework's characteristics are well explained. And I got idea to choose which framework in different situations thanks to his conclusion.
+
+3. Which talk did you like the best and why?
+I like the topic testing frameworks best since this presentation illustartes the concepts of three test framework QUnit, Jasmine and Mocha in a clear manner. And I do love the demonstration of those frameworks in the browser which provides us with practical examples.
