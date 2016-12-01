@@ -1,0 +1,8 @@
+1. Which presentation was the most polished and delivered, and why?
+I think Vue the is most polished and delivered topic in that this presentation has clearly listed what is Vue and provided simple code examples to demonstrate the difference between Vue and React. Besides, advantages of Vue compared to React are comprehensively discussed. I do love this presentation.
+
+2. Which topic did you learn the most from and what did you learn?
+Typescript is the topic from which I lean most. The problems with javascript are well explained at the very beginning. Concepts of typescript are introduced properly. And the pros and cons of typescript comparing to javascript are well explained.
+
+3. Which talk did you like the best and why?
+I like redis vs memcached most because this presentation is well-origanized by raising a problem firstly then introducing these two databases with comprehensive analysis. The advantages and disadvantages of these two databases are thoroughly discussed. And finally the answer is provided. I love this process of analysis.
